@@ -19,7 +19,7 @@ const getComputerChoice = () =>
             return 'rock';
         case 1:
             return 'paper';
-        case 1:
+        case 2:
             return 'scissor';        
     }
 }
@@ -51,10 +51,21 @@ const determineWinner = (userChoice,computerChoice) =>
             return 'You won!';
         }
     }
+    if(userChoice === 'rock')
+    {
+        if(computerChoice === 'paper' || computerChoice === 'scissor')
+        {
+            return 'Computer won!';
+        }
+        else
+        {
+            return 'You won!';
+        }
+    }
 }
 const playGame = () =>
 {
-    const userChoice = getUserChoice('paper');
+    const userChoice = getUserChoice('rock');
     const computerChoice = getComputerChoice();
     console.log(`${userChoice} was user choice`);
     console.log(`${computerChoice} was computer choice`);
