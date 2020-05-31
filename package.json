@@ -1,0 +1,25 @@
+{
+  "name": "babel-project",
+  "version": "1.0.0",
+  "description": "Transpile code in a Babel project",
+  "main": "Dogyear.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jontyabhay/Javascript-Projects.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jontyabhay/Javascript-Projects/issues"
+  },
+  "homepage": "https://github.com/Jontyabhay/Javascript-Projects#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "dependencies": {}
+}
